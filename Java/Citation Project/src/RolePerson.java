@@ -12,6 +12,10 @@ public class RolePerson implements Comparable<RolePerson> {
         return name;
     }
     public int compareTo(RolePerson other) {
+        if(other == null) {
+        return this.role.compareTo(null) + this.name.compareTo(null);
+        } else {
         return this.role.compareTo(other.role) + this.name.compareTo(other.name);
+        }
     }
 }
