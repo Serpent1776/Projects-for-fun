@@ -5,20 +5,20 @@ public class Algebra {
         double x = 0;
         return x;
     }
-    public PointList<Double> otherIntersect (Equation equation1, Equation equation2) {
+    public TreeList<Point> otherIntersect (Equation equation1, Equation equation2) {
         //solves for an insection or multiple insertions. For infinite points, it would seek a pattern.
         
         ArrayList<Double> x = new ArrayList<Double>();
         ArrayList<Double> y = new ArrayList<Double>();
-        PointList<Double> xy = new PointList<Double>();
+        TreeList<Point> xy = new TreeList<Point>();
         return xy;
     }
-    public PointList<Double> intersect (boolean xydeterminer) {
+    public TreeList<Point> intersect (boolean xydeterminer) {
         //solves for an insection or multiple insertions on an axis. For infinite points, it would seek a pattern.
         
         ArrayList<Double> x = new ArrayList<Double>();
         ArrayList<Double> y = new ArrayList<Double>();
-        PointList<Double> xy = new PointList<Double>();
+        TreeList<Point> xy = new TreeList<Point>();
         if(xydeterminer) {
             //x axis intersections
 
@@ -27,13 +27,6 @@ public class Algebra {
 
         }
         return xy;
-    }
-    public ArrayList<ArrayList<Double>> maxMin(Equation equation) {
-         ArrayList<Double> maxDoubles = new ArrayList<Double>();
-         ArrayList<Double> minDoubles = new ArrayList<Double>();
-         ArrayList<ArrayList<Double>> MaxMin = new ArrayList<ArrayList<Double>>();
-         
-         return MaxMin;
     }
     public ArrayList<Double> domain() {
         ArrayList<Double> x = new ArrayList<Double>();
@@ -51,5 +44,5 @@ public class Algebra {
         ArrayList<Double> y = new ArrayList<Double>();
         return y;
     }
-    
+
 }
